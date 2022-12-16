@@ -1,0 +1,126 @@
+* {
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: black;
+}
+
+.left {
+    background-color: #9191FB;
+}
+
+.right {
+    background-color: #239EC6;
+}
+
+.center {
+    background-color: #ADE4F6;
+}
+
+.footer {
+    background-color: #239EC6;
+}
+
+p {
+    font-size: 50px;
+    color: white;
+}
+
+#header-float {
+    width: 100%;
+    height: 20%;
+}
+
+#left-float {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+#right-float {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+#center-float {
+    position: relative;
+
+    width: 100%;
+    height: 60%;
+}
+
+
+#footer-float {
+    position: relative;
+
+    width: 100%;
+    height: 20%;
+}
+
+#container-float p {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: row;
+
+    flex: 1 1;
+}
+
+#left-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+#right-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+#center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 3 3;
+}
+
+#footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 1;
+}
