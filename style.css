@@ -1,11 +1,12 @@
 * {
-    overflow: hidden;
+    overflow: auto;
+    margin: 0;
 }
 
 .container {
     position: absolute;
-    width: 90vw;
-    height: 90vh;
+    width: 90%;
+    height: 90%;
 
     left: 50%;
     top: 50%;
@@ -22,7 +23,7 @@
     background-color: #239EC6;
 }
 
-.center {
+.content {
     background-color: #ADE4F6;
 }
 
@@ -30,50 +31,46 @@
     background-color: #239EC6;
 }
 
+.relative {
+    position: relative;
+}
+
 p {
     font-size: 50px;
     color: white;
 }
 
-#header-float {
+.float .header {
     width: 100%;
     height: 20%;
 }
 
-#left-float {
-    position: relative;
-
+.float .left {
     width: 50%;
     height: 100%;
     float: left;
 }
 
 
-#right-float {
-    position: relative;
-
+.float .right {
     width: 50%;
     height: 100%;
     float: right;
 }
 
 
-#center-float {
-    position: relative;
-
+.float .content {
     width: 100%;
     height: 60%;
 }
 
 
-#footer-float {
-    position: relative;
-
+.float .footer {
     width: 100%;
     height: 20%;
 }
 
-#container-float p {
+.float p {
     margin: auto;
     position: absolute;
     top: 50%;
@@ -81,46 +78,35 @@ p {
     transform: translate(-50%, -50%);
 }
 
-#container-flex {
+.flex, .flex div {
     display: flex;
+}
+
+.flex .center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container.flex {
     flex-direction: column;
 }
 
-#header-flex {
-    display: flex;
-    flex-direction: row;
-
-    flex: 1 1;
-}
-
-#left-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.flex .header {
     flex: 1;
 }
 
-#right-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.flex .left {
     flex: 1;
 }
 
-#center-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex: 3 3;
+.flex .right {
+    flex: 1;
 }
 
-#footer-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex .content {
+    flex: 3;
+}
 
-    flex: 1 1;
+.flex .footer {
+    flex: 1;
 }
